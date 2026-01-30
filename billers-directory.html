@@ -306,7 +306,7 @@
 
         <div class="billers-grid" id="billersGrid"></div>
 
-        <div class="setup-instructions">
+       <div class="setup-instructions">
             <h2>📋 Setup Instructions</h2>
             <ol>
                 <li><strong>Create a Google Sheet</strong> with your billers data</li>
@@ -331,7 +331,7 @@
 
     <script>
         // ========== CONFIGURATION ==========
-        const SHEET_URL = 'YOUR_PUBLISHED_GOOGLE_SHEET_CSV_URL_HERE';
+        const SHEET_URL = 'https://docs.google.com/spreadsheets/d/1zvkMOiVwfRt5g4suESWrbxO67M4sf0M-Cs9Iz_Z8UnY/edit?gid=3290761#gid=3290761';
         const AUTO_REFRESH = false; // Set to true to auto-refresh every 30 seconds
         const REFRESH_INTERVAL = 30000; // 30 seconds
 
@@ -376,9 +376,9 @@
         }
 
         async function fetchBillers() {
-            if (SHEET_URL === 'YOUR_PUBLISHED_GOOGLE_SHEET_CSV_URL_HERE') {
-                setStatus('Please configure SHEET_URL', 'error');
-                showEmptyState('Setup Required', 'Please follow the setup instructions below to connect your Google Sheet.');
+            if (SHEET_URL === 'https://docs.google.com/spreadsheets/d/1zvkMOiVwfRt5g4suESWrbxO67M4sf0M-Cs9Iz_Z8UnY/edit?gid=3290761#gid=3290761') {
+           //    setStatus('Please configure SHEET_URL', 'error');
+            //    showEmptyState('Setup Required', 'Please follow the setup instructions below to connect your Google Sheet.');
                 return;
             }
 
